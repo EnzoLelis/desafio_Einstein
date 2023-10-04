@@ -2,16 +2,18 @@ from flask import Flask, request, render_template
 from flask_restplus import Api, Resource, swagger
 from models.pacientes import db as pacientes_db
 from models.variantes import db as variantes_db
+from controllers.pacientes_controller import criar_paciente, listar_pacientes, atualizar_paciente, obter_paciente, excluir_paciente
+from controllers.variantes_controller import criar_variante, listar_variantes, atualizar_variante, obter_variante, excluir_variante
 
 # Inicialização do aplicativo Flask
 app = Flask(__name__)
 
 # Configuração do banco de dados SQLite para pacientes
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
+app.config['SQLALCHEMY_DATABASE_URI_PACIENTES'] = 'sqlite:///database_pacientes.db'
 pacientes_db.init_app(app)
 
 # Configuração do banco de dados SQLite para variantes
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///variantes.db'
+app.config['SQLALCHEMY_DATABASE_URI_VARIANTES'] = 'sqlite:///database_variantes.db'
 variantes_db.init_app(app)
 
 
