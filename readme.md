@@ -136,7 +136,7 @@ python app.py
 
 ## Realizando Consultas via API
 
-Você pode usar ferramentas como '**curl**' ou um cliente API, como o '**requests**' do Python, para realizar consultas à API. Aqui está um exemplo de como usar '**requests**' para fazer uma consulta:
+ Usando um cliente API, o '**requests**' do Python, para realizar consultas à API. Aqui está um exemplo de como usar '**requests**' para fazer uma consulta:
 
 ```python
 import requests
