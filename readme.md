@@ -141,7 +141,6 @@ Você pode usar ferramentas como '**curl**' ou um cliente API, como o '**request
 ```python
 import requests
 
-# Substitua 'http://localhost:5000' pela URL da sua aplicação.
 base_url = 'http://localhost:5000'
 
 # Exemplo de criação de um paciente
