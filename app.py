@@ -1,5 +1,4 @@
 from flask import Flask, request, render_template
-from flask_restplus import Api, Resource, swagger
 from models.pacientes import db as pacientes_db
 from models.variantes import db as variantes_db
 from controllers.pacientes_controller import criar_paciente, listar_pacientes, atualizar_paciente, obter_paciente, excluir_paciente
